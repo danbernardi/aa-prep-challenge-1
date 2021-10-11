@@ -1,0 +1,89 @@
+/* Your styles go in here. */
+/* form */
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form_box {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+}
+
+.form_element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+#bio {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+    background-color:#f9f9f9;
+    width: 344px;
+}
+
+/* picture card starts here */
+/* images */
+
+.hero {
+    height: 194px;
+    width: 100%;
+}
+
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+h1 {
+    font-size: 22px;
+}
+
+h2, p {
+    font-weight: lighter;
+    color:#232F34;
+}
+
+h2 {
+    font-size: 14px;
+    margin-top: -5%;
+}
+
+p {
+    font-size: 11px;
+}
+
+.title_section {
+    display: inline-block;
+    height: 40px;
+}
+
+.content p {
+    padding: 16px;
+}
+
+/* action */
+.card:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3)  ;
+}
+
+
+/* media querie starts here */
+@media screen and (max-width: 599px){
+
+    .form_element {
+        grid-template-columns: 1fr;
+    }
+
+    input, textarea, button, select {
+        width: 100%;
+    }
+}
